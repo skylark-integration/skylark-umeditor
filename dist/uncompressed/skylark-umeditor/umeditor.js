@@ -9767,9 +9767,14 @@ define([
             setActiveWidget : function($widget){
                 _activeWidget = $widget;
             },
-            getEditor: function (id, options) {
-                var editor = _editors[id] || (_editors[id] = this.createEditor(id, options));
-                _maxZIndex = _maxZIndex ? Math.max(editor.getOpt('zIndex'), _maxZIndex):editor.getOpt('zIndex');
+            getEditor: function(id, options, override) {
+                var editor;
+                if (override) {
+                    editor = _editors[id] = this.createEditor(id, options);
+                } else {
+                    editor = _editors[id] || (_editors[id] = this.createEditor(id, options));
+                }
+                _maxZIndex = _maxZIndex ? Math.max(editor.getOpt('zIndex'), _maxZIndex) : editor.getOpt('zIndex');
                 return editor;
             },
             setTopEditor: function(editor){
