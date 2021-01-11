@@ -11100,8 +11100,321 @@ define('skylark-umeditor/umeditor',[
 
     return skylark.attach("intg.umeditor",UM);
 });
+define('skylark-umeditor/lang/en/en',[
+    "../../umeditor"
+],function(UM) {
+
+    /**
+     * English language package
+     */
+    UM.I18N['en'] = {
+        'labelMap':{
+            'anchor':'Anchor', 'undo':'Undo', 'redo':'Redo', 'bold':'Bold', 'indent':'Indent', 'snapscreen':'SnapScreen',
+            'italic':'Italic', 'underline':'Underline', 'strikethrough':'Strikethrough', 'subscript':'SubScript','fontborder':'text border',
+            'superscript':'SuperScript', 'formatmatch':'Format Match', 'source':'Source', 'blockquote':'BlockQuote',
+            'pasteplain':'PastePlain', 'selectall':'SelectAll', 'print':'Print', 'preview':'Preview',
+            'horizontal':'Horizontal', 'removeformat':'RemoveFormat', 'time':'Time', 'date':'Date',
+            'unlink':'Unlink', 'insertrow':'InsertRow', 'insertcol':'InsertCol', 'mergeright':'MergeRight', 'mergedown':'MergeDown',
+            'deleterow':'DeleteRow', 'deletecol':'DeleteCol', 'splittorows':'SplitToRows','insertcode':'insert code',
+            'splittocols':'SplitToCols', 'splittocells':'SplitToCells','deletecaption':'DeleteCaption','inserttitle':'InsertTitle',
+            'mergecells':'MergeCells', 'deletetable':'DeleteTable', 'cleardoc':'Clear', 'insertparagraphbeforetable':"InsertParagraphBeforeTable",
+            'fontfamily':'FontFamily', 'fontsize':'FontSize', 'paragraph':'Paragraph', 'image':'Image','edittable':'Edit Table', 'edittd':'Edit Td','link':'Link',
+            'emotion':'Emotion', 'spechars':'Spechars', 'searchreplace':'SearchReplace', 'map':'BaiduMap', 'gmap':'GoogleMap',
+            'video':'Video', 'help':'Help', 'justifyleft':'JustifyLeft', 'justifyright':'JustifyRight', 'justifycenter':'JustifyCenter',
+            'justifyjustify':'Justify', 'forecolor':'FontColor', 'backcolor':'BackColor', 'insertorderedlist':'OL',
+            'insertunorderedlist':'UL', 'fullscreen':'FullScreen', 'directionalityltr':'EnterFromLeft', 'directionalityrtl':'EnterFromRight',
+            'rowspacingtop':'RowSpacingTop', 'rowspacingbottom':'RowSpacingBottom', 'highlightcode':'Code', 'pagebreak':'PageBreak', 'insertframe':'Iframe', 'imagenone':'Default',
+            'imageleft':'ImageLeft', 'imageright':'ImageRight', 'attachment':'Attachment', 'imagecenter':'ImageCenter', 'wordimage':'WordImage',
+            'lineheight':'LineHeight','edittip':'EditTip','customstyle':'CustomStyle', 'scrawl':'Scrawl', 'autotypeset':'AutoTypeset',
+            'webapp':'WebAPP', 'touppercase':'UpperCase', 'tolowercase':'LowerCase','template':'Template','background':'Background','inserttable':'InsertTable',
+            'drafts': 'drafts', 'formula':'formula'
+        },
+        'paragraph':{'p':'Paragraph', 'h1':'Title 1', 'h2':'Title 2', 'h3':'Title 3', 'h4':'Title 4', 'h5':'Title 5', 'h6':'Title 6'},
+        'fontfamily':{
+            'songti':'Sim sun',
+            'kaiti':'Sim kai',
+            'heiti':'Sim hei',
+            'lishu':'Sim li',
+            'yahei': 'Microsoft yahei',
+            'andaleMono':'Andale mono',
+            'arial': 'Arial',
+            'arialBlack':'Arial black',
+            'comicSansMs':'Comic sans ms',
+            'impact':'Impact',
+            'timesNewRoman':'Times new roman'
+        },
+        'ok':"OK",
+        'cancel':"Cancel",
+        'closeDialog':"closeDialog",
+        'tableDrag':"You must import the file uiUtils.js before drag! ",
+        'autofloatMsg':"The plugin AutoFloat depends on EditorUI!",
+        'anthorMsg':"Link",
+        'clearColor':'Clear',
+        'standardColor':'Standard color',
+        'themeColor':'Theme color',
+        'property':'Property',
+        'default':'Default',
+        'modify':'Modify',
+        'justifyleft':'Justify Left',
+        'justifyright':'Justify Right',
+        'justifycenter':'Justify Center',
+        'justify':'Default',
+        'clear':'Clear',
+        'anchorMsg':'Anchor',
+        'delete':'Delete',
+        'clickToUpload':"Click to upload",
+        'unset':"Language hasn't been set!",
+        't_row':'row',
+        't_col':'col',
+        'more':'More',
+        'pasteOpt':'Paste Option',
+        'pasteSourceFormat':"Keep Source Formatting",
+        'tagFormat':'Keep tag',
+        'pasteTextFormat':'Keep Text only',
+
+        //===============dialog i18N=======================
+        'image':{
+            'static':{
+                'lang_tab_local':"Local Upload",
+                'lang_tab_imgSearch':"Network Pictures",
+                'lang_input_dragTip':"Support drag upload",
+                'lang_btn_add':"Add"
+            },
+            'uploadError': 'Upload Error'
+        },
+        'emotion':{
+            'static':{
+                'lang_input_choice':'Choice',
+                'lang_input_Tuzki':'Tuzki',
+                'lang_input_lvdouwa':'LvDouWa',
+                'lang_input_BOBO':'BOBO',
+                'lang_input_babyCat':'BabyCat',
+                'lang_input_bubble':'Bubble',
+                'lang_input_youa':'YouA'
+            }
+        },
+        'gmap':{
+            'static':{
+                'lang_input_address':'Address:',
+                'lang_input_search':'Search',
+                'address':{'value':"Beijing"}
+            },
+            'searchError':'Unable to locate the address!'
+        },
+        'link':{
+            'static':{
+                'lang_input_text':'Text：',
+                'lang_input_url':'URL：',
+                'lang_input_title':'Title：',
+                'lang_input_target':'open in new window：'
+            },
+            'validLink':'Supports only effective when a link is selected',
+            'httpPrompt':'The hyperlink you enter should start with "http|https|ftp://"!'
+        },
+        'map':{
+            'static':{
+                'lang_city':"City",
+                'lang_address':"Address",
+                'city':{'value':"Beijing"},
+                'lang_search':"Search",
+                'lang_dynamicmap':"Dynamic map"
+            },
+            'cityMsg':"Please enter the city name!",
+            'errorMsg':"Can't find the place!"
+        },
+        'video':{
+            'static':{
+                'lang_tab_insertV':"Video",
+                'lang_video_url':" URL ",
+                'lang_video_size':"Video Size",
+                'lang_videoW':"Width",
+                'lang_videoH':"Height",
+                'lang_alignment':"Alignment",
+                'videoSearchTxt':{'value':"Enter the search keyword!"},
+                'videoType':{'options':["All", "Hot", "Entertainment", "Funny", "Sports", "Science", "variety"]},
+                'videoSearchBtn':{'value':"Search in Baidu"},
+                'videoSearchReset':{'value':"Clear result"}
+            },
+            'numError':"Please enter the correct Num. e.g 123,400",
+            'floatLeft':"Float left",
+            'floatRight':"Float right",
+            'default':"Default",
+            'block':"Display in block",
+            'urlError':"The video url format may be wrong!",
+            'loading':" &nbsp;The video is loading, please wait…",
+            'clickToSelect':"Click to select",
+            'goToSource':'Visit source video ',
+            'noVideo':" &nbsp; &nbsp;Sorry,can't find the video,please try again!"
+        },
+        'formula':{
+            'static':{
+                'lang_tab_common':'Common',
+                'lang_tab_symbol':'Symbol',
+                'lang_tab_letter':'Letter'
+            }
+        }
+    };
+});
+define('skylark-umeditor/lang/zh-cn/zh-cn',[
+    "../../umeditor"
+],function(UM) {
+
+
+    /**
+     * 中文语言包
+     */
+    UM.I18N['zh-cn'] = {
+        'labelMap':{
+            'anchor':'锚点', 'undo':'撤销', 'redo':'重做', 'bold':'加粗', 'indent':'首行缩进', 'snapscreen':'截图',
+            'italic':'斜体', 'underline':'下划线', 'strikethrough':'删除线', 'subscript':'下标','fontborder':'字符边框',
+            'superscript':'上标', 'formatmatch':'格式刷', 'source':'源代码', 'blockquote':'引用',
+            'pasteplain':'纯文本粘贴模式', 'selectall':'全选', 'print':'打印', 'preview':'预览',
+            'horizontal':'分隔线', 'removeformat':'清除格式', 'time':'时间', 'date':'日期',
+            'unlink':'取消链接', 'insertrow':'前插入行', 'insertcol':'前插入列', 'mergeright':'右合并单元格', 'mergedown':'下合并单元格',
+            'deleterow':'删除行', 'deletecol':'删除列', 'splittorows':'拆分成行', 'splittocols':'拆分成列', 'splittocells':'完全拆分单元格',
+            'mergecells':'合并多个单元格', 'deletetable':'删除表格', 'cleardoc':'清空文档','insertparagraphbeforetable':"表格前插入行",'insertcode':'代码语言','fontfamily':'字体', 'fontsize':'字号', 'paragraph':'段落格式', 'image':'图片',
+            'edittable':'表格属性','edittd':'单元格属性', 'link':'超链接','emotion':'表情', 'spechars':'特殊字符', 'searchreplace':'查询替换', 'map':'百度地图', 'gmap':'Google地图',
+            'video':'视频', 'help':'帮助', 'justifyleft':'居左对齐', 'justifyright':'居右对齐', 'justifycenter':'居中对齐',
+            'justifyjustify':'两端对齐', 'forecolor':'字体颜色', 'backcolor':'背景色', 'insertorderedlist':'有序列表',
+            'insertunorderedlist':'无序列表', 'fullscreen':'全屏', 'directionalityltr':'从左向右输入', 'directionalityrtl':'从右向左输入',
+            'rowspacingtop':'段前距', 'rowspacingbottom':'段后距', 'highlightcode':'插入代码', 'pagebreak':'分页', 'insertframe':'插入Iframe', 'imagenone':'默认',
+            'imageleft':'左浮动', 'imageright':'右浮动', 'attachment':'附件', 'imagecenter':'居中', 'wordimage':'图片转存',
+            'lineheight':'行间距','edittip' :'编辑提示','customstyle':'自定义标题', 'autotypeset':'自动排版', 'webapp':'百度应用',
+            'touppercase':'字母大写', 'tolowercase':'字母小写','background':'背景','template':'模板','scrawl':'涂鸦','music':'音乐','inserttable':'插入表格',
+            'drafts': '草稿箱', 'formula':'数学公式'
+
+
+        },
+        'paragraph':{'p':'段落', 'h1':'标题 1', 'h2':'标题 2', 'h3':'标题 3', 'h4':'标题 4', 'h5':'标题 5', 'h6':'标题 6'},
+        'fontfamily':{
+            'songti':'宋体',
+            'kaiti':'楷体',
+            'heiti':'黑体',
+            'lishu':'隶书',
+            'yahei':'微软雅黑',
+            'andaleMono':'andale mono',
+            'arial': 'arial',
+            'arialBlack':'arial black',
+            'comicSansMs':'comic sans ms',
+            'impact':'impact',
+            'timesNewRoman':'times new roman'
+        },
+        'ok':"确认",
+        'cancel':"取消",
+        'closeDialog':"关闭对话框",
+        'tableDrag':"表格拖动必须引入uiUtils.js文件！",
+        'autofloatMsg':"工具栏浮动依赖编辑器UI，您首先需要引入UI文件!",
+        'anthorMsg':"链接",
+        'clearColor':'清空颜色',
+        'standardColor':'标准颜色',
+        'themeColor':'主题颜色',
+        'property':'属性',
+        'default':'默认',
+        'modify':'修改',
+        'justifyleft':'左对齐',
+        'justifyright':'右对齐',
+        'justifycenter':'居中',
+        'justify':'默认',
+        'clear':'清除',
+        'anchorMsg':'锚点',
+        'delete':'删除',
+        'clickToUpload':"点击上传",
+        'unset':'尚未设置语言文件',
+        't_row':'行',
+        't_col':'列',
+        'more':'更多',
+        'pasteOpt':'粘贴选项',
+        'pasteSourceFormat':"保留源格式",
+        'tagFormat':'只保留标签',
+        'pasteTextFormat':'只保留文本',
+
+        //===============dialog i18N=======================
+        'image':{
+            'static':{
+                'lang_tab_local':"本地上传",
+                'lang_tab_imgSearch':"网络图片",
+                'lang_input_dragTip':"支持图片拖拽上传",
+                'lang_btn_add':"添加"
+            },
+            'uploadError': '上传出错'
+        },
+        'emotion':{
+            'static':{
+                'lang_input_choice':'精选',
+                'lang_input_Tuzki':'兔斯基',
+                'lang_input_BOBO':'BOBO',
+                'lang_input_lvdouwa':'绿豆蛙',
+                'lang_input_babyCat':'baby猫',
+                'lang_input_bubble':'泡泡',
+                'lang_input_youa':'有啊'
+            }
+        },
+        'gmap':{
+            'static':{
+                'lang_input_address':'地址',
+                'lang_input_search':'搜索',
+                'address':{'value':"北京"}
+            },
+            'searchError':'无法定位到该地址!'
+        },
+        'link':{
+            'static':{
+                'lang_input_text':'文本内容：',
+                'lang_input_url':'链接地址：',
+                'lang_input_title':'标题：',
+                'lang_input_target':'是否在新窗口打开：'
+            },
+            'validLink':'只支持选中一个链接时生效',
+            'httpPrompt':'您输入的超链接中不包含http等协议名称，默认将为您添加http://前缀'
+        },
+        'map':{
+            'static':{
+                'lang_city':"城市",
+                'lang_address':"地址",
+                'city':{'value':"北京"},
+                'lang_search':"搜索",
+                'lang_dynamicmap':"插入动态地图"
+            },
+            'cityMsg':"请选择城市",
+            'errorMsg':"抱歉，找不到该位置！"
+        },
+        'video':{
+            'static':{
+                'lang_tab_insertV':"插入视频",
+                'lang_video_url':"视频网址",
+                'lang_video_size':"视频尺寸",
+                'lang_videoW':"宽度",
+                'lang_videoH':"高度",
+                'lang_alignment':"对齐方式",
+                'videoSearchTxt':{'value':"请输入搜索关键字！"},
+                'videoType':{'options':["全部", "热门", "娱乐", "搞笑", "体育", "科技", "综艺"]},
+                'videoSearchBtn':{'value':"百度一下"},
+                'videoSearchReset':{'value':"清空结果"}
+            },
+            'numError':"请输入正确的数值，如123,400",
+            'floatLeft':"左浮动",
+            'floatRight':"右浮动",
+            'default':"默认",
+            'block':"独占一行",
+            'urlError':"输入的视频地址有误，请检查后再试！",
+            'loading':" &nbsp;视频加载中，请等待……",
+            'clickToSelect':"点击选中",
+            'goToSource':'访问源视频',
+            'noVideo':" &nbsp; &nbsp;抱歉，找不到对应的视频，请重试！"
+        },
+        'formula':{
+            'static':{
+                'lang_tab_common':'常用公式',
+                'lang_tab_symbol':'符号',
+                'lang_tab_letter':'字母'
+            }
+        }
+    };
+});
 define('skylark-umeditor/main',[
-	"./umeditor"
+	"./umeditor",
+	"./lang/en/en",
+	"./lang/zh-cn/zh-cn"
 ],function(umeditor){
 	return umeditor;
 });

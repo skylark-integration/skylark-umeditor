@@ -1,1 +1,1 @@
-{"version":3,"sources":["main.js"],"names":["define","umeditor"],"mappings":";;;;;;;AAAAA,QACC,cACC,SAASC,GACV,OAAOA","file":"../main.js","sourcesContent":["define([\r\n\t\"./umeditor\"\r\n],function(umeditor){\r\n\treturn umeditor;\r\n});"]}
+{"version":3,"sources":["main.js"],"names":["define","umeditor"],"mappings":";;;;;;;AAAAA,QACC,aACA,eACA,sBACC,SAASC,GACV,OAAOA","file":"../main.js","sourcesContent":["define([\r\n\t\"./umeditor\",\r\n\t\"./lang/en/en\",\r\n\t\"./lang/zh-cn/zh-cn\"\r\n],function(umeditor){\r\n\treturn umeditor;\r\n});"]}

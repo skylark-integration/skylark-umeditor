@@ -1,5 +1,7 @@
 define([
-	"./umeditor"
+	"./umeditor",
+	"./lang/en/en",
+	"./lang/zh-cn/zh-cn"
 ],function(umeditor){
 	return umeditor;
 });
