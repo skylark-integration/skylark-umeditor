@@ -9,7 +9,7 @@
   "homepage": "https://github.com/skylark-integration/skylark-umeditor/",
   "author": "Hudaokeji, Inc.",
   "scripts": {
-    "build": "sbundle build ."
+    "build": "slib build ."
   },
   "repository": {
     "type": "git",
